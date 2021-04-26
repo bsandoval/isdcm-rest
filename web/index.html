@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REST ISDCM</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>			
+            <div>
+                <h1>REST ISDCM</h1>
+            </div>
+            <div>
+                <form action="webresources/generic/getInfo" method="get">
+                    <input type="text" name="info"/>
+                    <input type="text" name="fecha"/>
+                    <input type="submit" name="submit" value="Enviar con GET"/>
+                </form>        
+
+                <form action="webresources/generic/postInfo" method="post">
+                    <input type="text" name="info"/>
+                    <input type="text" name="fecha"/>
+                    <input type="submit" name="submit" value="Enviar con POST"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
