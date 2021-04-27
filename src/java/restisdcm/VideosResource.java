@@ -7,10 +7,10 @@ package restisdcm;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.ws.rs.PUT;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
@@ -42,7 +42,7 @@ public class VideosResource {
      * @param id
      * @return 
      */
-    @POST
+    @PUT
     @Path("{id}/reproducciones")
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateReproducciones(@PathParam("id") int id) {
